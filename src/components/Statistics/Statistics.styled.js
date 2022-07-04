@@ -2,13 +2,16 @@ import styled from '@emotion/styled';
 
 export const Container = styled.div`
   margin-top: 20px;
-  font-size: 20 px;
+  font-size: 20px;
 `;
 export const ListItem = styled.li`
-  color: #232323;
+  color: ${({ theme }) => theme.colors.secondary};
   font-weight: bold;
 
   :not(:last-child) {
     margin-bottom: 5px;
+  }
+  :last-child {
+    color: ${({ theme }) => theme.colors.devoted};
   }
 `;

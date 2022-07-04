@@ -2,11 +2,11 @@ import styled from '@emotion/styled';
 
 export const Button = styled.button`
   cursor: pointer;
-  border: none;
-  font-size: 15px;
-  font-weight: bold;
+  border: ${({ theme }) => theme.borders.none};
+  font-size: ${({ theme }) => theme.fontSizes.m};
+  font-weight: ${({ theme }) => theme.fontWeights.bold};
   border-radius: 10px;
-  background-color: #fff;
+  background-color: ${({ theme }) => theme.colors.light};
   box-shadow: 0px 0px 5px 1px #bebebe;
   padding: 12px 0;
   width: 65px;
@@ -18,8 +18,8 @@ export const Button = styled.button`
   }
 
   :hover {
-    background-color: #00e01d;
-    color: #fff;
+    background-color: ${({ theme }) => theme.colors.accent};
+    color: ${({ theme }) => theme.colors.light};
     transition: all 0.3s ease;
     transform: scale(1.1, 1.1);
     box-shadow: 0px 0px 3px 0px black;
