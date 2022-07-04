@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { ThemeProvider } from '@emotion/react';
 import { App } from 'App/App';
-import { theme } from './style-config';
+import { theme } from './style-config/theme';
 import './index.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
