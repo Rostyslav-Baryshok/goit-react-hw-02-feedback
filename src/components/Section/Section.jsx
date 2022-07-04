@@ -1,14 +1,12 @@
 import PropTypes from 'prop-types';
-import { Wrapper } from './Section.styled';
+import { StyleSection } from './Section.styled';
 
-const Section = ({ title, children }) => {
+export const Section = ({ title, children }) => {
   return (
-    <Wrapper>
-      <section>
-        {title && <h2>{title}</h2>}
-        {children}
-      </section>
-    </Wrapper>
+    <StyleSection>
+      {title && <h2>{title}</h2>}
+      {children}
+    </StyleSection>
   );
 };
 
@@ -16,5 +14,3 @@ Section.propTypes = {
   title: PropTypes.string,
   children: PropTypes.object.isRequired,
 };
-
-export default Section;

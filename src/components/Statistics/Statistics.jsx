@@ -1,9 +1,15 @@
 import PropTypes from 'prop-types';
-import { Wrapper } from 'components/Section/Section.styled';
+import { Container } from 'components/Statistics/Statistics.styled';
 
-const Statistics = ({ good, neutral, bad, total, positivePercentage }) => {
+export const Statistics = ({
+  good,
+  neutral,
+  bad,
+  total,
+  positivePercentage,
+}) => {
   return (
-    <Wrapper>
+    <Container>
       <div>
         <span>Good: {good}</span>
         <p></p>
@@ -16,7 +22,7 @@ const Statistics = ({ good, neutral, bad, total, positivePercentage }) => {
         <span>Positive Feedback: {positivePercentage} %</span>
         <p></p>
       </div>
-    </Wrapper>
+    </Container>
   );
 };
 
@@ -27,5 +33,3 @@ Statistics.propTypes = {
   total: PropTypes.number.isRequired,
   positivePercentage: PropTypes.number.isRequired,
 };
-
-export default Statistics;
