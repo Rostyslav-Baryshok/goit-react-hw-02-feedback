@@ -3,16 +3,23 @@ import styled from 'styled-components';
 export const Button = styled.button`
   cursor: pointer;
   border: none;
+  font-size: 15px;
+  font-weight: bold;
   border-radius: 10px;
-  padding: 10px 0;
-  width: 60px;
-  margin-top: 20px;
+  background-color: #fff;
+  box-shadow: 0px 0px 3px 2px grey;
+  padding: 12px 0;
+  width: 65px;
+  margin-top: 30px;
   :not(:last-child) {
     margin-right: 12px;
+    transform: scale(1, 1);
   }
   :hover {
-    background-color: var(--secondary);
-    box-shadow: inset 0 0 0 1px gray;
+    background-color: #6f6f6f;
+    color: #fff;
     transition: all 0.3s ease;
+    transform: scale(1.1, 1.1);
+    box-shadow: 0px 0px 0px 2px black;
   }
 `;

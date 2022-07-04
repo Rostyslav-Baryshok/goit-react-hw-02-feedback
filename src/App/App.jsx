@@ -3,7 +3,7 @@ import { Section } from 'components/Section';
 import { Notification } from 'components/Notification';
 import { Statistics } from 'components/Statistics';
 import { FeedbackOptions } from 'components/FeedbackOptions';
-import { Container } from './App.styled';
+import { Container, Title } from './App.styled';
 
 export class App extends Component {
   state = {
@@ -39,7 +39,7 @@ export class App extends Component {
     return (
       <Container>
         <Section>
-          <h2>Please leave feedback</h2>
+          <Title>Please leave feedback</Title>
           <FeedbackOptions
             options={Object.keys(this.state)}
             onLeaveFeedback={this.onLeaveFeedback}
@@ -47,7 +47,7 @@ export class App extends Component {
         </Section>
 
         <Section>
-          <h2>Statistics</h2>
+          <Title>Statistics</Title>
           {!total ? (
             <Notification message="There is no feedback" />
           ) : (
