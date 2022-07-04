@@ -1,7 +1,5 @@
 import styled from 'styled-components';
 
 export const StyleSection = styled.div`
-  /* display: flex;
-  justify-content: center;
-  text-align: center; */
+  margin-top: 20px;
 `;
