@@ -1,4 +1,4 @@
-export const theme = {
+export const theme = Object.freeze({
   colors: {
     black: '#000',
     white: '#fff',
@@ -39,4 +39,4 @@ export const theme = {
     normal: '4px',
     round: '50%',
   },
-};
+});
