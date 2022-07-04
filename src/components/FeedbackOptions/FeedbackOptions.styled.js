@@ -7,7 +7,7 @@ export const Button = styled.button`
   font-weight: ${({ theme }) => theme.fontWeights.bold};
   border-radius: 10px;
   background-color: ${({ theme }) => theme.colors.light};
-  box-shadow: 0px 0px 5px 1px #bebebe;
+  box-shadow: -3px 2px 3px 1px #6aa06a;
   padding: 12px 0;
   width: 65px;
   margin-top: 30px;
