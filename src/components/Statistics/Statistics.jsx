@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { Container } from 'components/Statistics/Statistics.styled';
+import { Container, ListItem } from 'components/Statistics/Statistics.styled';
 
 export const Statistics = ({
   good,
@@ -10,16 +10,13 @@ export const Statistics = ({
 }) => {
   return (
     <Container>
-      <span>Good: {good}</span>
-      <p></p>
-      <span>Neutral: {neutral}</span>
-      <p></p>
-      <span>Bad: {bad}</span>
-      <p></p>
-      <span>Total: {total}</span>
-      <p></p>
-      <span>Positive Feedback: {positivePercentage} %</span>
-      <p></p>
+      <ul>
+        <ListItem>Good: {good}</ListItem>
+        <ListItem>Neutral: {neutral}</ListItem>
+        <ListItem>Bad: {bad}</ListItem>
+        <ListItem>Total: {total}</ListItem>
+        <ListItem>Positive Feedback: {positivePercentage} %</ListItem>
+      </ul>
     </Container>
   );
 };
