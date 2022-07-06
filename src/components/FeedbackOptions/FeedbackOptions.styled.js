@@ -10,7 +10,7 @@ export const Button = styled.button`
   box-shadow: -3px 2px 3px 1px #6aa06a;
   padding: 12px 0;
   width: 65px;
-  margin-top: 30px;
+  /* margin-top: 30px; */
   :not(:last-child) {
     margin-right: 12px;
     transform: scale(1, 1);

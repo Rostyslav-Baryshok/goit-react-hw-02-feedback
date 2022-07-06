@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 const Title = styled.h2`
-  padding-top: 30px;
+  padding: 20px;
 `;
 
 export const Section = ({ title, children }) => {

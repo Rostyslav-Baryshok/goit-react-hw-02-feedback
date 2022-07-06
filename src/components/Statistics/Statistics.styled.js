@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 
 export const Container = styled.div`
-  margin-top: 20px;
+  /* margin-top: 20px; */
   font-size: 20px;
 `;
 export const ListItem = styled.li`
