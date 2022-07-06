@@ -1,9 +1,8 @@
 import { Component } from 'react';
-import { Section } from 'components/Section';
 import { Notification } from 'components/Notification';
 import { Statistics } from 'components/Statistics';
 import { FeedbackOptions } from 'components/FeedbackOptions';
-import { Container, Title } from './App.styled';
+import { Container } from 'components/Container';
 
 export class App extends Component {
   state = {
@@ -38,28 +37,23 @@ export class App extends Component {
 
     return (
       <Container>
-        <Section>
-          <Title>Please leave feedback</Title>
-          <FeedbackOptions
-            options={Object.keys(this.state)}
-            onLeaveFeedback={this.onLeaveFeedback}
+        <h2>Please leave feedback</h2>
+        <FeedbackOptions
+          options={Object.keys(this.state)}
+          onLeaveFeedback={this.onLeaveFeedback}
+        />
+        <h2>Statistics</h2>
+        {!total ? (
+          <Notification message="There is no feedback" />
+        ) : (
+          <Statistics
+            good={good}
+            neutral={neutral}
+            bad={bad}
+            total={total}
+            positivePercentage={positivePercentage}
           />
-        </Section>
-
-        <Section>
-          <Title>Statistics</Title>
-          {!total ? (
-            <Notification message="There is no feedback" />
-          ) : (
-            <Statistics
-              good={good}
-              neutral={neutral}
-              bad={bad}
-              total={total}
-              positivePercentage={positivePercentage}
-            />
-          )}
-        </Section>
+        )}
       </Container>
     );
   }
